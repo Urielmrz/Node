@@ -16,11 +16,12 @@ let infoCursos = {
         },
         {
             id: 3,
-            titulo: 'Aprende Javascript',
-            lenguaje: 'javascript',
-            vistas: 102223,
-            nivel: 'basico' 
+            titulo: 'Aprende Python Avanzado',
+            lenguaje: 'python',
+            vistas: 1231242,
+            nivel: 'intermedio'
         }
+        
     ],
     'matematicas': [
         {
@@ -31,7 +32,7 @@ let infoCursos = {
             nivel: 'basico'
         },
         {
-            id: 1,
+            id: 2,
             titulo: 'Aprende Algebra',
             tema: 'algebra',
             vistas: 15722,
@@ -40,4 +41,6 @@ let infoCursos = {
     ]
 }
 
-module.exports.infoCursos = infoCursos;
+module.exports = {
+    infoCursos
+}

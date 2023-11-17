@@ -3,6 +3,13 @@ const app = express();
 
 const {infoCursos} = require('./datos/cursos');
 
+//Contenido estatico
+
+//app.use( express.static('public') )
+//app.get('*', (req, res) => {
+//   res.sendFile(__dirname + '/public/404.html');
+//})
+
 //  Routers
 
 const routerProgramacion = require('./routers/programacion');
@@ -13,11 +20,11 @@ const routerMatematicas = require('./routers/matematicas.js');
 app.use('/api/cursos/matematicas', routerMatematicas);
 
 
-
-// Routing
+// Routing-
 
 app.get('/', (req, res) => {
-    res.send('Mi pagina principal (primer servidor con Express)');
+    res.send('Esta es mi pagina principal');
+    
 });
 
 app.get(`/api/cursos`, (req, res) => {
